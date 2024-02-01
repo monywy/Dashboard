@@ -1,3 +1,4 @@
+import './ui/global.css';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +6,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      
+      <body className={'${monserrat.className} antialised'}>
+        {children}
+        <footer className='py-10 flex justify-center items-center'>
+          Desarrollado por Mònica Roque Sànchez
+        </footer>
+        </body>
     </html>
   );
 }
